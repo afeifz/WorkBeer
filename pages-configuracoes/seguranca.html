@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkBeer</title>
+    <script src="https://kit.fontawesome.com/73170762c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/reset.css">
+    <link rel="stylesheet" href="../assets/styles/configuracoes/seguranca.css">
+    <link rel="icon" href="../assets/images/logo-w.png" type="image/png">
+
+
+</head>
+<body>
+    
+    <main>
+
+        <div class="configuracoes-container">
+            <section class="secao-configuracoes">
+                <div class="secao-configuracoes-configs">
+                    <div class="titulo-configs">
+                          <a class="voltar" href="../paginas-principais/perfil.html"><i class="fa-solid fa-arrow-left"></i></a>  <h1>Configurações</h1>
+                    </div>
+                    <a class="tirar-decoracao" href="../pages-configuracoes/configperfil.html"> <h1 class="topicos-configs"> <i class="fa-regular fa-address-card hidden"></i> Configurações do Perfil </h1></a>
+                    <h1 class="topicos-configs"> <i class="fa-solid fa-shield-halved hidden"></i> Privacidade e Segurança</h1>
+                    <a class="tirar-decoracao" href="./dados.html"><h1 class="topicos-configs"> <i class="fa-solid fa-cube hidden"></i> Dados</h1></a>
+                    <a class="tirar-decoracao" href="./confignotificacao.html"><h1 class="topicos-configs"> <i class="fa-regular fa-bell hidden"></i> Configurações de Notificação</h1></a>
+                    <a class="tirar-decoracao" href="./configidioma.html"><h1 class="topicos-configs"> <i class="fa-solid fa-earth-americas hidden"></i> Idioma</h1></a>
+                    <a class="tirar-decoracao" href="./assistencia.html"><h1 class="topicos-configs"> <i class="fa-solid fa-phone hidden"></i> Assistência e Suporte</h1></a>
+                </div>
+                
+                    <a href="../index.html" style="text-decoration: none; color: black;"><h1 class="sair-config"> <i class="fa-solid fa-arrow-right-from-bracket hidden"></i> Sair</h1></a>
+                
+            </section>
+            <section class="secao-configuracoes-2">
+                <div class="configs-seguranca">
+                    <h1 id="titulo-config-perfil">Privacidade e Segurança</h1>
+                    <p id="paragrafo-instrucoes">Gerencie suas preferências de cookies, veja as políticas de nosso site ou exclua sua conta</p>
+                    <div class="configs-seguranca-opcoes">
+                        <button id="aceitarCookies" style="border: none; cursor: pointer;">Gerenciamento de Cookies</button>
+                        <div id="mensagemCookies" style="display: none;">
+                            Este site usa cookies para garantir a melhor experiência possível para você.
+                            <button onclick="aceitarCookies()">Aceitar</button>
+                        </div>
+                        <a onclick="excluirconta()" style="text-decoration: none;" href="../index.html"><p id="exclusao-conta">Exclusão de conta</p></a>
+                        <a href="../paginas-principais/politica.html" style="text-decoration: none; color: black; font-size: 13px;" >Política de privacidade e termos de uso</a href="../politica.html">
+                    </div>
+                </div>
+                <script src="../trade-skills.js"></script>
+                <script>
+                    function mostrarMensagemCookies() {
+                        document.getElementById('mensagemCookies').style.display = 'block' ;
+                    }
+                
+                    function aceitarCookies() {
+                        // Aqui você pode adicionar o código para definir um cookie ou realizar outras ações ao aceitar os cookies
+                        document.getElementById('mensagemCookies').style.display = 'none';
+                    }
+                
+                    document.getElementById('aceitarCookies').addEventListener('click', mostrarMensagemCookies);
+                </script>
+                
+            </section>
+        </div>
+    </main>
+</body>
+</html>

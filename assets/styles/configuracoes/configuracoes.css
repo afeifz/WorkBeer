@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+    /* Fontes */
+    --fonte-principal: "Inter", sans-serif;
+
+    /* Cores */
+    --cor-textos: #212121;
+    --cor-links: #22B5F3;
+}
+
+header {
+    background-color: #EFEFEF;
+}
+
+.configuracoes-container {
+    display: flex;
+
+}
+
+.secao-configuracoes-2 {
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 100vh;
+}
+
+.secao-configuracoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao-configuracoes-configs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 20em;
+    margin: 1em 0 0em 1em;
+    font-family: "Inter", sans-serif;
+}
+
+.sair-config {
+    text-align: end;
+    align-self: end;
+    margin: 0 1em 1em 0;
+    font-family: var(--fonte-principal);
+}
+
+.titulo-configs {
+    font-family: var(--fonte-principal);
+    display: flex;
+    gap: 1em;
+}
+
+.tirar-decoracao{
+    text-decoration: none;
+    color: var(--cor-textos);
+}
+
+.topicos-configs {
+    display: flex;
+    gap: 1em;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .titulo-configs {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .secao-configuracoes-2 {
+        display: none;
+    }
+
+    .configuracoes-container {
+        justify-content: left;
+        align-items: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .secao-configuracoes {
+        flex-direction: column;
+    }
+
+    .sair-config {
+        align-self: flex-start;
+        margin: 1.5em 0 0 1em;
+        font-family: var(--fonte-principal);
+    }
+}

@@ -1,0 +1,116 @@
+:root {
+    --cor-links: #22B5F3;
+    --fonte-principal: "Inter", sans-serif;
+    --tamanho-da-fonte: 0.7em;
+    --cor-rodape: #D9D9D9;
+}
+
+.circulo {
+    width: 9.5em;
+    height: 9.5em;
+    border-radius: 50%;
+    background-color: var(--cor-rodape); 
+}
+
+.biografia {
+    width: 20em;
+    height: 8em;
+    background-color: #FFFFFF;
+}
+.biografia textarea {
+    width: 100%; 
+    height: 100%; 
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.container-perfil {
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+    height: 100vh;
+    align-items: center;
+}
+
+.secao-perfil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-perfil {
+    margin: 0.5em 0;
+}
+
+.tirar-link {
+    text-decoration: none;
+}
+
+/* Main */
+
+@media screen and (max-width: 767px) {
+    .container-perfil {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .engrenagem {
+        display: none;
+    }
+
+    .secao-perfil {
+        flex-direction: column-reverse;
+    }
+
+    .biografia {
+        height: 13em;
+    }
+}
+
+
+
+/* Footer */
+@media screen and (max-width: 576px) {
+    .rodape {
+        display: none;
+     }
+ 
+     .rodape-mobile {
+         display: block;
+         background-color: #D9D9D9;
+         height: 1.5em;
+         hr {
+             margin: 0;
+             height: 1px;
+         }
+         div {
+             display: flex;
+             justify-content: space-between;
+             margin: 0 1em 0 1em;
+         }
+     }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .rodape {
+       display: none;
+    }
+
+    .rodape-mobile {
+        display: block;
+        background-color: #D9D9D9;
+        height: 1.5em;
+        hr {
+            margin: 0;
+            height: 1px;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 1em 0 1em;
+        }
+    }
+}

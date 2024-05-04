@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+    /* Fontes */
+    --fonte-principal: "Inter", sans-serif;
+
+    /* Cores */
+    --cor-textos: #212121;
+    --cor-links: #22B5F3;
+
+    --tamanho-da-fonte: 0.7em;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secao-cadastro {
+    display: flex;
+    gap: 2em;
+    margin-right: 1em;
+}
+
+.registro, .login {
+    font-family: "Inter", sans-serif;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: var(--tamanho-da-fonte);
+    text-decoration: none;
+}
+
+.login {
+    background-color: var(--cor-links); 
+    color: white;
+}
+
+.registro {
+    color: black;
+}
+
+.registro:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transition: .6s;
+}
+
+.login:hover {
+    background-color: #1E90FF;
+    transition: .6s;
+}
+
+
+

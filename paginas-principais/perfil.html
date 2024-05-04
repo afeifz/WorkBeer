@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkBeer</title>
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/cabecalho.css">
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/reset.css">
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/main.css">
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/rodape.css">
+    <link rel="stylesheet" href="../assets/styles/perfil/perfil.css">
+    <link rel="icon" href="../assets/images/logo-w.png" type="image/png">
+    <script src="https://kit.fontawesome.com/73170762c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="secao-cabecalho-mobile">
+            <i class="fa-solid fa-bars fa-lg"></i>
+            <img src="../assets/images/logo-w.png" width="40" alt="">
+            <div class="secao-busca-desktop">
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar...">
+                <button id="botao-pesquisa">
+                <img src="../assets/images/lupa.png" alt="Ícone de Pesquisa" class="imagem-pesquisa">
+                </button>
+            </div>
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <img class="logo-workbeer" src="../assets/images/logo-workbeer.png" alt="Logo da Empresa" width="100">
+        <div class="secao-busca">
+            <input type="text" id="campo-pesquisa" placeholder="Pesquisar...">
+            <button id="botao-pesquisa">
+            <img src="../assets/images/lupa.png" alt="Ícone de Pesquisa" class="imagem-pesquisa">
+            </button>
+        </div>
+        <div class="secao-links-cabecalho">
+            <a href="./eventos.html" class="links-cabecalho" >Eventos</a>
+            <a href="" onclick="tradeskills()" class="links-cabecalho">Trade Skills</a>
+        </div>
+        <script src="./trade-skills.js"></script>
+        <img class="user-image" src="../assets/images/User.png" alt="" width="30">
+    </header>
+    <main class="main">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var nome = localStorage.getItem('nomeUsuario'); // Recuperando o nome do usuário do localStorage
+                var sobrenome = localStorage.getItem('sobrenomeUsuario'); // Recuperando o sobrenome do usuário do localStorage
+                var biografia = localStorage.getItem('biografiaUsuario');
+                if (nome && sobrenome && biografia) { // Verificando se os valores foram recuperados com sucesso
+                    document.getElementById('profile-name').textContent = nome + ' ' + sobrenome; // Exibindo o nome completo no h1
+                    document.getElementById('biografiaPerfil').textContent = biografia
+                }
+            });
+        </script>
+
+     
+       <div class="container-perfil">
+        <section class="secao-perfil">
+            <div class="circulo">
+            </div>
+            <div class="nome-perfil">
+                <h1 id="profile-name"><i class="fa-solid fa-circle-check" style="color: #22B5F3;"></i> Nome Sobrenome</h1>
+            </div>
+            <div class="engrenagem">
+               <a class="tirar-link" href="./configuracoes.html"> <i class="fa-solid fa-gear"></i></a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>São Paulo, SP</h1>
+                <h1>Full Stack & DevSecOps</h1>
+                <h1>HTML, CSS, JavaScript, Tailwind, SasS, SCCS</h1>
+            </div>
+            <div class="nome-perfil">
+            <p>Biografia</p>
+            </div>
+            <div class="biografia">
+                <p id="biografiaPerfil"></p>
+            </div>
+        </section>
+       </div>
+
+       
+    </main>
+    <footer class="rodape">
+        <div class="links-rodape">
+        <p>FAQ</p>
+        <p>About</p>
+        <p>Privacy Policy</p>
+        <p>Contact</p>
+        </div>
+        <div class="icones-rodape">
+        <i class="fa-brands fa-instagram fa-2x" style="color: #8b8d92;" ></i>  
+        <i class="fa-brands fa-linkedin fa-2x" style="color: #8b8d92;"></i>
+        <i class="fa-brands fa-x-twitter fa-2x" style="color: #8b8d92;"  ></i>
+        </div>
+        <div class="texto-rodape">
+            <p>WorkBeer - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <footer class="rodape-mobile">
+        <hr>
+        <div>
+        <a style="text-decoration: none; color: black;" href="./index.html"><i class="fa-solid fa-house"></i></a>
+        <i class="fa-regular fa-handshake"></i>
+        <i class="fa-regular fa-calendar"></i>
+        <i class="fa-regular fa-bookmark"></i>
+        <i class="fa-regular fa-user"></i>
+    </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkBeer</title>
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/cabecalho.css">
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/reset.css">
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/main.css">
+    <link rel="stylesheet" href="../assets/styles/eventosdekstop/rodape.css">
+    <link rel="icon" href="../assets/images/logo-w.png" type="image/png">
+    <script src="https://kit.fontawesome.com/73170762c9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="secao-cabecalho-mobile">
+            <i class="fa-solid fa-bars fa-lg"></i>
+            <img src="../assets/images/logo-w.png" width="40" alt="">
+            <div class="secao-busca-desktop">
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar...">
+                <button id="botao-pesquisa">
+                <img src="../assets/images/lupa.png" alt="Ícone de Pesquisa" class="imagem-pesquisa">
+                </button>
+            </div>
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <img class="logo-workbeer" src="../assets/images/logo-workbeer.png" alt="Logo da Empresa" width="100">
+        <div class="secao-busca">
+            <input type="text" id="campo-pesquisa" placeholder="Pesquisar...">
+            <button id="botao-pesquisa">
+            <img src="../assets/images/lupa.png" alt="Ícone de Pesquisa" class="imagem-pesquisa">
+            </button>
+        </div>
+        <div class="secao-links-cabecalho">
+            <a href="" class="links-cabecalho" >Eventos</a>
+            <a href="" onclick="tradeskills()" id="trade-skills" class="links-cabecalho">Trade Skills</a>
+        </div>
+        <script src="trade-skills.js"></script>
+        <a href="./perfil.html"><img class="user-image" src="../assets/images/User.png" alt="" width="30"></a>
+    </header>
+    <main class="main">
+        <div class="container-eventos">
+           
+            <section class="secao-meus-eventos">   
+               
+                <div class="links-eventos" style="margin-top: 1em;" >
+                    <a href="" class="links">Todos os Eventos</a>
+                    <a href="" class="links">Marcados</a>           
+                </div>
+
+            </section>
+
+            <section class="secao-eventos">
+                <div class="titulo-eventos">
+                    <h1 id="titulo-quinta-feira">Quinta feira- 10 de Abril</h1>
+                    <button class="criar-um-evento" id="criar-evento">Criar Evento</button>
+
+                    <div id="form-modal" style="display: none;">
+                        <h2>Criar Novo Evento</h2>
+                        <form id="novo-evento-form">
+                            <label for="titulo">Data: </label>
+                            <input type="text" id="titulo" name="titulo" required><br>
+                
+                            <label for="descricao">Título: </label>
+                            <input type="text" id="descricao" name="descricao" required><br>
+                
+                            <button type="submit">Criar</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="evento1">
+                <div class="container-secao-eventos">
+                    <div>
+                        <img class="imagens" src="../assets/images/reuniao2.png" alt="" width="200">
+                    </div>
+                    <div class="conteudo-secao-eventos">
+                        <h1 class="titulo-data">10 de Abril - 9 AM</h1>
+                        <h1 class="descricao-evento">Encontro para IA e Machine Learning</h1>
+                        <div class="botoes-eventos">
+                            <div class="botoes-dois">
+                            <button id="confirmar1" class="btn-imagem">
+                                <i class="fa-regular fa-circle-check fa-lg"></i> 
+                            </button>
+
+                            <button id="negar1" class="btn-imagem">
+                                <i class="fa-regular fa-circle-xmark fa-lg"></i>
+                            </button>
+                        </div>
+                            <button id="marcar1" class="btn-imagem">
+                                <i class="fa-regular fa-bookmark fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="evento2">
+                <div class="container-secao-eventos">
+                    <div>
+                        <img class="imagens" src="../assets/images/reuniao2.png" alt="" width="200">
+                    </div>
+                    <div class="conteudo-secao-eventos">
+                        <h1 class="titulo-data">10 de Abril - 18 PM</h1>
+                        <h1 class="descricao-evento">Happy Hour and Networking</h1>
+                        <div class="botoes-eventos">
+                            <div class="botoes-dois">
+                            <button id="confirmar2" class="btn-imagem">
+                                <i class="fa-regular fa-circle-check fa-lg"></i> 
+                            </button>
+
+                            <button id="negar2" class="btn-imagem">
+                                <i class="fa-regular fa-circle-xmark fa-lg"></i>
+                            </button>
+                        </div>
+                            <button id="marcar2" class="btn-imagem">
+                                <i class="fa-regular fa-bookmark fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="evento3">
+                <div class="container-secao-eventos">
+                    <div>
+                        <img class="imagens" src="../assets/images/reuniao2.png" alt="" width="200">
+                    </div>
+                    <div class="conteudo-secao-eventos">
+                        <h1 class="titulo-data">10 de Abril - 23 AM</h1>
+                        <h1 class="descricao-evento">Encontro de anonimatos no Bar</h1>
+                        <div class="botoes-eventos">
+                            <div class="botoes-dois">
+
+                            <button id="confirmar3" class="btn-imagem">
+                                <i class="fa-regular fa-circle-check fa-lg"></i> 
+                            </button>
+
+                            <button id="negar3" class="btn-imagem">
+                                <i class="fa-regular fa-circle-xmark fa-lg"></i>
+                            </button>
+                        </div>
+                            <button id="marcar3" class="btn-imagem">
+                                <i class="fa-regular fa-bookmark fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+        <script src="./app.js"></script>
+        <script src="./app2.js"></script>
+        <script src="./app3.js"></script>
+        <div class="centralizacao">
+        <button id="btnCarregarMais" onclick="carregarMaisEventos()">Carregar Mais</button>
+    </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="links-rodape">
+        <p>FAQ</p>
+        <p>About</p>
+        <p>Privacy Policy</p>
+        <p>Contact</p>
+        </div>
+        <div class="icones-rodape">
+        <i class="fa-brands fa-instagram fa-2x" style="color: #8b8d92;" ></i>  
+        <i class="fa-brands fa-linkedin fa-2x" style="color: #8b8d92;"></i>
+        <i class="fa-brands fa-x-twitter fa-2x" style="color: #8b8d92;"  ></i>
+        </div>
+        <div class="texto-rodape">
+            <p>WorkBeer - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <footer class="rodape-mobile">
+        <hr>
+        <div>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-regular fa-handshake"></i>
+        <i class="fa-regular fa-calendar"></i>
+        <i class="fa-regular fa-bookmark"></i>
+        <a style="text-decoration: none; color: black;" href="./perfil.html"><i class="fa-regular fa-user"></i></a>
+    </div>
+    </footer>
+    
+</body>
+</html>
