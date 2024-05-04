@@ -211,9 +211,6 @@ body {
 
 @media screen and (max-width: 576px) {
     
-    .secao-eventos {
-        
-    }
     .secao-meus-eventos {
         width: 80%;
         display: flex;
@@ -275,9 +272,7 @@ body {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .secao-eventos {
-        
-    }
+
 
     .secao-meus-eventos {
         width: 60%;
@@ -291,9 +286,6 @@ body {
     }
 
 
-    .botoes-eventos {
-        
-    }
 
     .container-eventos {
         flex-direction: column;
