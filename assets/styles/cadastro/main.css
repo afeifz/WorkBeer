@@ -13,7 +13,7 @@
 }
 
 .container-registro {
-    background-image: url(../assets/images/fundo-login.png);
+    background-image: url(./fundo-login.png);
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;

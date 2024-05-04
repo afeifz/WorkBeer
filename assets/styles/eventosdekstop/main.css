@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-    background-image: url('/assets/images/imagem-main.png');
+    background-image: url('./imagem-main.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
